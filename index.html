@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestDesign - Professional Web Design That Converts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #0a0f1e; color: #fff; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero */
+        header { background: linear-gradient(135deg, #1a2436 0%, #0a0f1e 100%); padding: 100px 0; text-align: center; }
+        .eyebrow { color: #00d9ff; font-size: 0.9em; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; }
+        h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; line-height: 1.1; }
+        .highlight { color: #f1c40f; position: relative; }
+        .subheadline { font-size: 1.3rem; color: #9ca3af; max-width: 700px; margin: 0 auto 40px; }
+        .cta-button { background: linear-gradient(135deg, #f1c40f, #f39c12); color: #0a0f1e; padding: 18px 40px; border-radius: 8px; font-size: 1.1rem; font-weight: 700; text-decoration: none; display: inline-block; transition: transform 0.2s; border: none; cursor: pointer; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(241, 196, 15, 0.3); }
+        
+        /* Sections */
+        section { padding: 80px 0; }
+        .problem { background: #141414; }
+        .solution { background: #0a0f1e; }
+        .features { background: #141414; }
+        .pricing { background: #0a0f1e; }
+        .guarantee { background: #141414; }
+        .faq { background: #0a0f1e; }
+        
+        h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 30px; color: #fff; text-align: center; }
+        h3 { color: #00d9ff; font-size: 1.3rem; margin-bottom: 15px; }
+        p { color: #9ca3af; font-size: 1.1rem; max-width: 700px; margin: 0 auto 20px; text-align: center; }
+        
+        /* Cards */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .card { background: #1a2436; padding: 30px; border-radius: 12px; border: 1px solid #334155; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #00d9ff; }
+        .card p { text-align: left; margin: 0; }
+        
+        /* Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .pricing-card { background: #1a2436; padding: 40px; border-radius: 12px; border: 2px solid #334155; text-align: center; }
+        .pricing-card.featured { border-color: #f1c40f; transform: scale(1.05); }
+        .price { font-size: 3rem; font-weight: 800; color: #f1c40f; margin: 20px 0; }
+        .pricing-card p { margin-bottom: 30px; }
+        
+        /* FAQ */
+        .faq-item { background: #1a2436; padding: 20px 30px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #334155; }
+        .faq-item h4 { color: #fff; margin-bottom: 10px; font-size: 1.1rem; }
+        .faq-item p { text-align: left; margin: 0; }
+        
+        /* Footer */
+        footer { background: #0a0f1e; padding: 40px 0; text-align: center; border-top: 1px solid #334155; }
+        footer p { color: #6b7280; font-size: 0.9rem; margin: 0; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.8rem; }
+            .card-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header>
+        <div class="container">
+            <div class="eyebrow">Professional Web Design</div>
+            <h1>Stunning Websites That <span class="highlight">Convert</span> Visitors Into Customers</h1>
+            <p class="subheadline">Stop losing potential customers with amateur design. Get a professional, high-converting website that builds trust and drives sales — without the tech headaches.</p>
+            <a href="#pricing" class="cta-button">Get Your Website Today</a>
+        </div>
+    </header>
+    
+    <!-- PROBLEM SECTION -->
+    <section class="problem">
+        <div class="container">
+            <h2>Why Most Business Websites Fail</h2>
+            <p>Your website is your digital storefront, yet most small business sites look outdated, load slowly, and confuse visitors. You have 3 seconds to make an impression. If your site looks amateur, potential customers assume your business is amateur too — and they leave.</p>
+        </div>
+    </section>
+    
+    <!-- SOLUTION SECTION -->
+    <section class="solution">
+        <div class="container">
+            <h2>Professional Design Changes Everything</h2>
+            <p>A professionally designed website instantly builds credibility, guides visitors to take action, and works 24/7 as your best salesperson. We create stunning, mobile-responsive sites optimized for conversions — so you can focus on running your business.</p>
+        </div>
+    </section>
+    
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="container">
+            <h2>What You Get</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>1. Conversion-Focused Design</h3>
+                    <p>Every element strategically placed to guide visitors toward booking, buying, or contacting you.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Mobile-First Responsive</h3>
+                    <p>Looks perfect on phones, tablets, and desktops. Over 60% of traffic is mobile — we optimize for it.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Lightning Fast Load Speed</h3>
+                    <p>Optimized code and assets ensure your site loads in under 2 seconds. Slow sites lose customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PRICING SECTION -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter Website</h3>
+                    <div class="price">$997</div>
+                    <p>Perfect for solopreneurs and new businesses. One-page site with all essentials.</p>
+                    <a href="#" class="cta-button">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Business Pro</h3>
+                    <div class="price">$2,497</div>
+                    <p>Multi-page website with advanced features. Best for growing businesses.</p>
+                    <a href="#" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GUARANTEE SECTION -->
+    <section class="guarantee">
+        <div class="container">
+            <h2>100% Satisfaction Guarantee</h2>
+            <p>Love your new website or we will revise it until you do. We are not happy unless you are thrilled with the result. Your success is our success.</p>
+        </div>
+    </section>
+    
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>How long does it take to build my website?</h4>
+                <p>Most projects are completed within 2-3 weeks from start to finish, depending on complexity and how quickly you provide feedback.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do I own my website?</h4>
+                <p>Absolutely. Once the project is complete and paid in full, you own everything — the design, code, and content.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What if I need changes after launch?</h4>
+                <p>We offer monthly maintenance packages for ongoing updates, or you can request changes at our standard hourly rate.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FINAL CTA -->
+    <section class="solution" style="text-align: center;">
+        <div class="container">
+            <h2>Ready to Transform Your Online Presence?</h2>
+            <a href="#pricing" class="cta-button">Get Your Professional Website</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TestDesign. Created by Jim Boopah.</p>
+        </div>
+    </footer>
+</body>
+</html>
